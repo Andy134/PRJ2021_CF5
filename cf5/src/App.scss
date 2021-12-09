@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./scss/button.scss";
+@import "./scss/custom.scss";
+
+$color-blue: #1d71b6;
+$color-light-blue: #039be5;
+$color-dark: #282c34;
+
+.App {
+  min-height: 100vh;
+}
+
+.App.dark {
+  background-color: $color-dark;
+  color: white;
+}
+
+.App.light {
+  background-color: white;
+  color: $color-dark;
+}
+
+.App a {
+  text-decoration: none;
+  color: $color-light-blue;
+  cursor: default;
+}
+
+.App a:hover {
+  text-decoration: none;
+  color: $color-blue;
+}

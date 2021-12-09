@@ -1,0 +1,111 @@
+@import "~bootstrap/scss/bootstrap";
+
+$base-color: #66bb6a;
+$image-border-radius: 0.5rem;
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  padding: 5px 5px;
+  // border-radius: 50px !important;
+  font-size: 12px;
+  text-align: center;
+}
+
+.notification.dark {
+  background-color: grey;
+  color: white;
+}
+
+.notification.light {
+  background-color: #282c34;
+  color: white;
+}
+
+.ck.ck-content {
+  color: black;
+}
+
+.text.limit-2l {
+  overflow: hidden;
+  text-overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.loader-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.jumbo-box {
+  background-color: $base-color;
+}
+
+.jumbo-box-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.jumbo-box-item .image {
+  height: 100%;
+}
+
+.post-item-image {
+  border-top-left-radius: $image-border-radius;
+  border-bottom-left-radius: $image-border-radius;
+}
+
+.post-item-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.post-item-body {
+  border-top-right-radius: $image-border-radius;
+  border-bottom-right-radius: $image-border-radius;
+}
+.post-item-body.dark:hover {
+  background-color: #35383d;
+}
+.post-item-body:hover {
+  background-color: #f7f7f7;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+@include media-breakpoint-up(xs) {
+  .jumbo-box-item {
+    max-height: 200px;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .jumbo-box-item {
+    max-height: 130px;
+  }
+}
+@include media-breakpoint-up(md) {
+  .jumbo-box-item {
+    max-height: 130px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .jumbo-box-item {
+    max-height: 200px;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .jumbo-box-item {
+    max-height: 250px;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .jumbo-box-item {
+    max-height: 290px;
+  }
+}
